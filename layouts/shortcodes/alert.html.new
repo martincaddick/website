@@ -1,0 +1,8 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+{{ $color := .Get "color" | default "primary" }}
+<div class="alert{{- " " -}}{{- if .IsNamedParams -}}
+{{- with .Get "color" -}}alert-{{.}}{{- else -}}alert-info{{- end -}}
+{{- else -}}
+	{{- with .Get 0 -}}alert-{{.}}{{- else -}}alert-info{{- end -}}
+{{- end -}} 
+" role="alert">{{- .Inner -}}</div>

@@ -78,9 +78,9 @@ enable = true
 ###############################################################################
 # Docsy - Services configuration
 ###############################################################################
-[services]
-  [services.googleAnalytics]
-  id = "G-Y2KDEK0998"
+# [services]
+#   [services.googleAnalytics]
+#   id = "G-Y2KDEK0998"
 
 ###############################################################################
 # Docsy - Language configuration
@@ -133,6 +133,8 @@ enable = true
   # To find occurrences, search the repo for 'params "githubbranch"'.
   github_branch = "master"
 
+  [[params.print]]
+    disable_toc = true
   # These entries appear in the drop-down menu at the top of the website.
   [[params.versions]]
     version = "master"
